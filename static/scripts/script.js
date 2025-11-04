@@ -1,7 +1,6 @@
-// Confirm JS Loaded 
+// Confirm JS Loaded, I was having issues
 console.log("✅ script.js connected");
 
-// 0. Setup: remove dotted borders around boxes dynamically 
 window.addEventListener("DOMContentLoaded", () => {
   const boxes = document.querySelectorAll(".box");
   boxes.forEach((box) => {
@@ -14,18 +13,18 @@ function moveTheThing() {
   const thing = document.getElementById("theThing");
   if (!thing) return;
   thing.dataset.moved = thing.dataset.moved === "true" ? "false" : "true";
-  thing.style.transition = "transform 0.5s ease";
+  thing.style.transition = "transform 0.5s ease"; //this ease thing looks smooth and nice
   thing.style.transform =
-    thing.dataset.moved === "true" ? "translateX(200px)" : "translateX(0)";
+    thing.dataset.moved === "true" ? "translateX(500px)" : "translateX(-500px)";
 }
 
 // 2. Style The Text 
 function styleTheText() {
   const text = document.getElementById("fancyText");
   if (!text) return;
-  const colors = ["red", "blue", "green", "purple", "orange", "teal"];
-  const fonts = ["Arial", "Georgia", "Courier New", "Verdana", "Comic Sans MS"];
-  const sizes = ["20px", "30px", "40px", "50px"];
+  const colors = ["red", "blue", "green", "purple", "orange", "teal", "pink", "brown", "yellow"];
+  const fonts = ["Arial", "Georgia", "Courier New", "Verdana", "Comic Sans MS", "Times New Roman"];
+  const sizes = ["20px", "30px", "40px", "50px", "60px", "70px","100px"];
   text.style.color = colors[Math.floor(Math.random() * colors.length)];
   text.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
   text.style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
@@ -76,13 +75,12 @@ function yourBonusChallenge() {
     circle.style.height = "100px";
     circle.style.borderRadius = "50%";
     circle.style.position = "absolute";
-    circle.style.backgroundColor = "magenta";
     circle.style.top = "100px";
     circle.style.left = "100px";
     circle.style.transition = "all 0.5s ease";
     document.body.appendChild(circle);
 
-    // Add a helpful notice message once
+    // Add a helpful notice message  abt the circle once
     const note = document.createElement("p");
     note.id = "circleNotice";
     note.textContent =
