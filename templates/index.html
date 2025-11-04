@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Playground</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <h1>JavaScript Playground</h1>
+
+    <hr />
+
+    <h2>1. Move The Thing</h2>
+    <h3>
+      Make the thing move from one box to the other when the button is clicked.
+    </h3>
+    <h4>
+      Bonus: Make it move back and forth every time the button is clicked.
+    </h4>
+    <div class="moveChallenge">
+      <div class="box" id="leftBlock">
+        <div id="theThing">
+          <img src="assets/cake.png" alt="image of a cake" />
+        </div>
+      </div>
+      <div class="box" id="rightBlock"></div>
+    </div>
+
+    <div class="activate">
+      <button onclick="moveTheThing()">Move The Thing</button>
+    </div>
+    <hr />
+
+    <h2>2. Style This Text</h2>
+    <h3>
+      Change the color, font, and size of the text below when the button is
+      pressed.
+    </h3>
+    <div class="target">
+      <p id="fancyText">Hey look at this cool text!</p>
+    </div>
+    <div class="activate">
+      <button onclick="styleTheText()">Style!</button>
+    </div>
+
+    <hr />
+
+    <h2>3. Get the Form Values</h2>
+    <div>
+      <form action="#">
+        <div>
+          <label for="firstField">First Field: </label
+          ><input id="firstField" name="firstField" type="text" />
+        </div>
+        <div>
+          <label for="secondField">Second Field: </label
+          ><input id="secondField" name="secondField" type="color" />
+        </div>
+        <div>
+          <label for="thirdField">Third Field: </label>
+          <input name="thirdField" id="thirdField" type="checkbox" />
+        </div>
+      </form>
+    </div>
+
+    <div class="activate">
+      <button onclick="getFormValues()">Get Form Values</button>
+    </div>
+
+    <table class="results">
+      <tr>
+        <th>First Result:</th>
+        <td id="firstResult"></td>
+      </tr>
+      <tr>
+        <th>Second Result:</th>
+        <td id="secondResult"></td>
+      </tr>
+      <tr>
+        <th>Third Result:</th>
+        <td id="thirdResult"></td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>4. Count the Stuff</h2>
+
+    <p>Put the number of each element in the boxes.</p>
+    <button onclick="countTheStuff()">Count 'em up</button>
+    <table class="results">
+      <tr>
+        <th>P</th>
+        <td id="countOfP"></td>
+      </tr>
+      <tr>
+        <th>H2</th>
+        <td id="countOfH2"></td>
+      </tr>
+      <tr>
+        <th>TD</th>
+        <td id="countOfTD"></td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>5. Add Some Rows</h2>
+
+    <p>
+      Make this button add new rows to the table. Make the content match what's
+      already present.
+    </p>
+    <button onclick="addNewRow()">Add New Row</button>
+
+    <table id="addRowsTable" class="results">
+      <tr>
+        <th>#</th>
+      </tr>
+      <tr>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>6. (Bonus) - Make Your Own Challenge!</h2>
+
+    <p>
+      Make up your own JavaScript challenge.Add the necessary HTML as a separate
+      file or make it appear here!
+    </p>
+
+    <button onclick="yourBonusChallenge()">Bonus Button</button>
+
+    <hr />
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

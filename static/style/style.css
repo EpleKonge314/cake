@@ -1,0 +1,63 @@
+h1 {
+color: green;
+}
+
+body{
+display: flex;
+align-items: left;
+flex-direction: column;
+justify-content: center;
+line-height: 3em;
+}
+
+.moveChallenge {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.activate{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box {
+display: flex;
+border: blue 2px;
+border-style: dashed;
+padding: 3em;
+margin: 1em;
+width: 3em;
+height: 3em;
+align-items: center;
+justify-content: center;
+}
+
+
+.target{
+border: blue 2px;
+border-style: groove;
+max-width: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.results{
+max-width: 30em;
+}
+
+.results th, td{
+border: black 1px;
+border-style: double;
+}
+
+.results th{
+max-width: .2em;
+}
+
+#theThing {
+  min-width: 32px;
+  max-width: 32px;
+}
